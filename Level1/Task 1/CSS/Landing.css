@@ -1,0 +1,171 @@
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/*Nav*/
+.nav {
+  background-color: #000;
+  display: flex;
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  justify-content: center;
+}
+#Logo {
+  margin-top: 15px;
+  color: #fff;
+  font-weight: bold;
+  list-style: none;
+  font-size: 20px;
+}
+
+/*Slides*/
+.slides-container {
+  margin-top: 50px;
+  height: 500px;
+  width: 100%;
+  background-color: #faf1fa;
+}
+.col1 {
+  width: 70%;
+  float: left;
+}
+.col2 {
+  width: 30%;
+  float: left;
+}
+#par1,
+#par2,
+#par3,
+#par4,
+#par5 {
+  width: 800px;
+  margin-left: 90px;
+  margin-top: 120px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff00aa;
+}
+#img1,
+#img2,
+#img3,
+#img4,
+#img5 {
+  margin-top: 80px;
+  border-radius: 15px;
+}
+#p1,
+#p2,
+#p3,
+#p4,
+#p5 {
+  display: none;
+}
+.text-animation,
+.img-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/*Most Selling*/
+.mostselling {
+  height: 640px;
+  margin-top: 110px;
+  text-align: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.mostselling > p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.line {
+  width: 160px;
+  height: 5px;
+  background-color: #ff00aa;
+  margin-top: 10px;
+  margin: 10px auto;
+}
+.products-container {
+  margin-top: 80px;
+  width: 100%;
+  overflow-x: auto;
+}
+.products-container > button {
+  height: 40px;
+  width: 120px;
+  background-color: #ff00aa;
+  color: #fff;
+  border: 0;
+  border-radius: 25px;
+  transition: transform 0.4s ease;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 1380px;
+}
+.products-container > button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.products {
+  height: 450px;
+  width: 100%;
+  background-color: #d9d9d9;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.product {
+  background-color: #ececec;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-top: 45px;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.2s ease;
+}
+.product > img {
+  border-radius: 15px;
+}
+.product:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.products::-webkit-scrollbar {
+  display: none;
+}
+
+/*Contact*/
+#name {
+  margin-left: 50px;
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+}
+.contact {
+  margin-top: 100px;
+  height: 300px;
+  width: 100%;
+  background-color: #faf1fa;
+  font-size: 22px;
+}
+#row1,
+#row2,
+#row3 {
+  margin-left: 50px;
+}

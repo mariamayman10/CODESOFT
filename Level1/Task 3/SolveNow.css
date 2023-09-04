@@ -1,0 +1,78 @@
+body {
+  background-image: url("BG.png");
+  background-size: cover;
+  background-position: center center;
+}
+.WebName {
+  color: #b296e0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.calc {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.rows {
+  display: grid;
+  background-color: transparent;
+  width: 350px;
+  height: 450px;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(238, 238, 238, 0.964);
+}
+.rows button {
+  height: 30px;
+  width: 70px;
+  border-width: 0px;
+  border-color: darkgrey;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 9px;
+  margin-right: 3px;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 0px rgba(238, 238, 238, 0.7);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.rows button:hover {
+  background-color: #ffedde83;
+}
+#backspace {
+  justify-content: center;
+  align-items: center;
+}
+#monitor {
+  font-size: 21px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: #ffedde83;
+  box-shadow: 0px 0px 10px 0px rgba(142, 142, 142, 0.2);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  max-width: 300px;
+  height: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+#exp {
+  margin-left: 5px;
+  margin-top: 3px;
+  margin-bottom: 7px;
+  overflow-x: scroll;
+}
+#monitor::-webkit-scrollbar {
+  display: none;
+}
+#exp::-webkit-scrollbar {
+  display: none;
+}
